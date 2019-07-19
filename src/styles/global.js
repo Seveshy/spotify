@@ -1,6 +1,12 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 import "rc-slider/assets/index.css";
+
+export const Content = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+`;
 
 const GlobalStyle = createGlobalStyle`
 
