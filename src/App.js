@@ -3,8 +3,9 @@ import GlobalStyle from "./styles/global";
 
 import Sidebar from "./components/Sidebar";
 import Player from "./components/Player";
+import Header from "./components/Header";
 
-import { Wrapper, Content } from "./styles/components";
+import { Wrapper, Content, Container } from "./styles/components";
 
 import "./styles/global";
 
@@ -12,7 +13,12 @@ const App = () => (
   <Fragment>
     <GlobalStyle />
     <Wrapper>
-      <Sidebar />
+      <Container>
+        <Sidebar />
+        <Content>
+          <Header />
+        </Content>
+      </Container>
       <Player />
     </Wrapper>
   </Fragment>
