@@ -6,7 +6,7 @@ const Browse = () => (
   <Container>
     <Title>Navegar</Title>
     <List>
-      <Playlist href="">
+      <Playlist to="/playlists/1">
         <img
           src="https://f4.bcbits.com/img/a2939269798_10.jpg"
           alt="Playlist"
@@ -18,7 +18,7 @@ const Browse = () => (
         </p>
       </Playlist>
 
-      <Playlist href="">
+      <Playlist to="/playlists/1">
         <img
           src="https://f4.bcbits.com/img/a2939269798_10.jpg"
           alt="Playlist"
@@ -30,7 +30,7 @@ const Browse = () => (
         </p>
       </Playlist>
 
-      <Playlist href="">
+      <Playlist to="/playlists/1">
         <img
           src="https://f4.bcbits.com/img/a2939269798_10.jpg"
           alt="Playlist"
@@ -42,7 +42,7 @@ const Browse = () => (
         </p>
       </Playlist>
 
-      <Playlist href="">
+      <Playlist to="/playlists/1">
         <img
           src="https://f4.bcbits.com/img/a2939269798_10.jpg"
           alt="Playlist"

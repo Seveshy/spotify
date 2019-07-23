@@ -9,10 +9,10 @@ const Sidebar = () => (
     <div>
       <Nav main>
         <li>
-          <a href="">Navegar</a>
+          <a>Navegar</a>
         </li>
         <li>
-          <a href="">Rádio</a>
+          <a>Rádio</a>
         </li>
       </Nav>
 
@@ -21,28 +21,28 @@ const Sidebar = () => (
           <span>SUA BIBLIOTECA</span>
         </li>
         <li>
-          <a href="">Seu daily Mix</a>
+          <a>Seu daily Mix</a>
         </li>
         <li>
-          <a href="">Todos recentemente</a>
+          <a>Todos recentemente</a>
         </li>
         <li>
-          <a href="">Álbums</a>
+          <a>Álbums</a>
         </li>
         <li>
-          <a href="">Artistas</a>
+          <a>Artistas</a>
         </li>
         <li>
-          <a href="">Estações</a>
+          <a>Estações</a>
         </li>
         <li>
-          <a href="">Arquivos locais</a>
+          <a>Arquivos locais</a>
         </li>
         <li>
-          <a href="">Vídeos</a>
+          <a>Vídeos</a>
         </li>
         <li>
-          <a href="">Podcats</a>
+          <a>Podcats</a>
         </li>
       </Nav>
 
@@ -51,7 +51,7 @@ const Sidebar = () => (
           <span>PLAYLISTS</span>
         </li>
         <li>
-          <a href="">Melhores do rock </a>
+          <a>Melhores do rock </a>
         </li>
       </Nav>
     </div>
