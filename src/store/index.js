@@ -15,16 +15,18 @@ const sagaMiddleware = createSagaMiddleware({ sagaMonitor });
 
 middlewares.push(sagaMiddleware);
 
-const createAppropriateStore =
+const appropriateStore =
   process.env.NODE_ENV === "development"
-    ? console.tron.createStore
-    : createStore;
+    ? compose(
+        console.tron.createEnhancer(),
+        applyMiddleware(...middlewares)
+      )
+    : applyMiddleware(...middlewares);
 
-const store = createAppropriateStore(
-  reducers,
-  compose(applyMiddleware(...middlewares))
-);
+const store = createStore(reducers, appropriateStore);
 
 sagaMiddleware.run(sagas);
 
 export default store;
+
+//https://gist.github.com/fhugoduarte/d57fb1891650d5ec39b2cda31cd2d616
