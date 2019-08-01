@@ -17,7 +17,6 @@ const Playlist = () => (
         <button>PLAY</button>
       </div>
     </Header>
-
     <SongList cellPadding={0} cellSpacing={0}>
       <thead>
         <th />
