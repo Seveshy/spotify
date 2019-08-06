@@ -33,6 +33,10 @@ const GlobalStyle = createGlobalStyle`
     button {
         cursor: pointer;
     }
+
+    a {
+        cursor: pointer;
+    }
 `;
 
 export default GlobalStyle;
