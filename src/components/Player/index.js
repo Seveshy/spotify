@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Slider from "rc-slider";
 import Sound from "react-sound";
 import PropTypes from "prop-types";
@@ -32,15 +32,19 @@ const Player = ({ player }) => (
     <Sound url="" />
 
     <Current>
-      <img
-        src="https://f4.bcbits.com/img/a2939269798_10.jpg"
-        alt="Album de musica"
-      />
+      {!!player.currentSong && (
+        <Fragment>
+          <img
+            src={player.currentSong.thumbnail}
+            alt={player.currentSong.title}
+          />
 
-      <div>
-        <span>Times like these</span>
-        <small>Foo Fighters</small>
-      </div>
+          <div>
+            <span>{player.currentSong.title}</span>
+            <small>{player.currentSong.author}</small>
+          </div>
+        </Fragment>
+      )}
     </Current>
 
     <Progress>
@@ -86,14 +90,17 @@ const Player = ({ player }) => (
   </Container>
 );
 
-/*Player.PropTypes = {
+Player.propTypes = {
   player: PropTypes.shape({
     currentSong: PropTypes.shape({
+      thumbnail: PropTypes.string,
+      title: PropTypes.string,
       file: PropTypes.string,
+      file: PropTypes.string
     }),
-    status: PropTypes.string,
+    status: PropTypes.string
   }).isRequired
-}*/
+};
 
 const mapStateToProps = state => ({
   player: state.player
