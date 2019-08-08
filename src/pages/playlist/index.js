@@ -98,7 +98,7 @@ class Playlist extends Component {
               playlist.songs.map(song => (
                 <SongItem
                   key={song.id}
-                  onClick={() => this.setState({ selectSong: song.id })}
+                  onClick={() => this.setState({ selectedSong: song.id })}
                   onDoubleClick={() =>
                     this.props.loadSong(song, playlist.songs)
                   }
@@ -137,7 +137,7 @@ class Playlist extends Component {
 
 const mapStateToProps = state => ({
   playlistDetails: state.playlistDetails,
-  currentSong: state.currentSong
+  currentSong: state.player.currentSong
 });
 
 const mapDispatchToProps = dispatch =>
